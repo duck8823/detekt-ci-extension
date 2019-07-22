@@ -4,3 +4,19 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds
  */
+
+plugins {
+    kotlin("jvm") version "1.3.41"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    val detekt_version by extra { "1.0.0-RC16" }
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("io.gitlab.arturbosch.detekt:detekt-core:$detekt_version")
+    implementation("io.gitlab.arturbosch.detekt:detekt-api:$detekt_version")
+}
