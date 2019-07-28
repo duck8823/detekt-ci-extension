@@ -7,6 +7,7 @@
 
 plugins {
     kotlin("jvm") version "1.3.41"
+    `maven-publish`
 }
 
 repositories {
@@ -22,4 +23,16 @@ dependencies {
     implementation("io.gitlab.arturbosch.detekt:detekt-api:$detekt_version")
     implementation("io.gitlab.arturbosch.detekt:detekt-cli:$detekt_version")
     implementation("org.eclipse.mylyn.github:org.eclipse.egit.github.core:$github_cli_version")
+}
+
+publishing {
+    publications {
+        register("mavenJava", MavenPublication::class) {
+            groupId    = "com.github.duck8823.detekt-ci-extension"
+            artifactId = "detekt-ci-extension"
+            version    = "0.0.1-SNAPSHOT"
+
+            from(components["java"])
+        }
+    }
 }

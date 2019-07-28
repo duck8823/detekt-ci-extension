@@ -4,7 +4,8 @@ build:
 console-reports:
   active: true
   exclude:
-  #  - 'BuildFailureReport'
+    - 'BuildFailureReport'
+  #  - 'CircleCIBuildFailureReport'
 
 empty-blocks:
   active: true
