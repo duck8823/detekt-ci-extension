@@ -5,7 +5,8 @@ console-reports:
   active: true
   exclude:
     - 'BuildFailureReport'
-  #  - 'CircleCIBuildFailureReport'
+    - 'CircleCIBuildFailureReport'
+  #  - 'TravisCIBuildFailureReport'
 
 empty-blocks:
   active: true
