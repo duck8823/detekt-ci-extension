@@ -28,7 +28,7 @@ dependencies {
 publishing {
     publications {
         register("mavenJava", MavenPublication::class) {
-            groupId    = "com.github.duck8823.detekt-ci-extension"
+            groupId    = "com.github.duck8823"
             artifactId = "detekt-ci-extension"
             version    = "0.0.1-SNAPSHOT"
 

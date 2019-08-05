@@ -19,7 +19,7 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    detektPlugins("com.github.duck8823.detekt-ci-extension:detekt-ci-extension:0.0.1-SNAPSHOT")
+    detektPlugins("com.github.duck8823:detekt-ci-extension:0.0.1-SNAPSHOT")
 }
 
 detekt {
