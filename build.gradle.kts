@@ -18,7 +18,7 @@ dependencies {
     val detekt_version by extra { "1.0.0-RC16" }
     val github_cli_version by extra { "2.1.5" }
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))
 
     implementation("io.gitlab.arturbosch.detekt:detekt-core:$detekt_version")
