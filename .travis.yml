@@ -1,0 +1,7 @@
+language: java
+jdk:
+  - openjdk10
+
+install: true
+
+script: ./sample/gradlew -p sample clean detekt
