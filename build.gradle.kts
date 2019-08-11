@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    val detekt_version by extra { "1.0.0-RC16" }
+    val detekt_version by extra { "1.0.0" }
     val github_cli_version by extra { "2.1.5" }
 
     implementation(kotlin("stdlib"))
