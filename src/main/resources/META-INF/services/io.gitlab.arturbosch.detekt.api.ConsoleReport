@@ -1,2 +1,1 @@
-com.github.duck8823.detekt.ci.extension.CircleCIBuildFailureReport
-com.github.duck8823.detekt.ci.extension.TravisCIBuildFailureReport
+com.github.duck8823.detekt.ci.extension.CIBuildFailureReport
